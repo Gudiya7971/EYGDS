@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f7;
+        }
+
+        form {
+            background: #ffffff;
+            width: 400px;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="range"] {
+            width: 100%;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+    <h2>Registration Form</h2>
+
+    First Name:
+    <input type="text" name="firstname" required>
+    <br><br>
+
+    Last Name:
+    <input type="text" name="lastname" required>
+    <br><br>
+
+    Email:
+    <input type="email" name="email" required>
+    <br><br>
+
+    Password:
+    <input type="password" name="password" required>
+    <br><br>
+
+    DOB:
+    <input type="date" name="dob">
+    <br><br>
+
+    Gender:
+    <br>
+    Female <input type="radio" name="gender" value="female">
+    <br>
+    Male <input type="radio" name="gender" value="male">
+    <br><br>
+
+    State:
+    <select name="state">
+        <option hidden>Select State</option>
+        <option>Maharashtra</option>
+        <option>Pune</option>
+        <option>Haryana</option>
+        <option>Delhi</option>
+    </select>
+    <br><br>
+
+    Experience Level:
+    <input type="range" min="0" max="10">
+    <br><br>
+
+    Upload CV:
+    <input type="file">
+    <br><br>
+
+    Education:
+    <br>
+    10th <input type="checkbox" checked>
+    <br>
+    12th <input type="checkbox">
+    <br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
